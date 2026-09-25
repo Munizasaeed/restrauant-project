@@ -24,7 +24,7 @@ body {
     gap: 20px;
     overflow: hidden;
 }
-.menus{
+.menues{
     margin-top: 45px;
     display: flex;
     flex-direction: column;
@@ -58,5 +58,134 @@ width: 40%;
     .imgs{
         width: 100%;
         height: auto;
+    }
+}
+
+/* new section */
+.buttons{
+    padding-top: 50px;
+display: block;
+    width: 60%;
+    margin: auto;
+}
+.btns{
+    display: flex;
+    gap: 30px;
+}
+.btn2 {
+    background-color: #4A121A;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+@media(max-width:768px){
+    .btns{
+    flex-wrap: wrap;
+    gap: 10px;
+    }
+}
+@media(max-width:768px) {
+    .btn2{
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+@media(max-width:768px) {
+    .buttons {
+        width: 100%;
+    }
+}
+@media(min-width:768px) and (max-width:1100px){
+    .buttons{
+        width: 90%;
+    }
+}
+
+ /* new section 1 */
+
+
+/* Cards Grid Container */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px;
+    gap: 20px;
+    
+}
+
+/* Single Card Box */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+/* Card Image */
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 30px;
+}
+
+/* Card Content (Text Area) */
+.card-body {
+    padding: 12px 15px;
+
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0 0 5px 0;
+    color: #4A121A;
+}
+.card-price {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    color:#D4AF37;
+}
+.btn3 {
+    margin-top: 10px;
+    background-color: #4A121A;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    width: 100%;
+}
+@media(max-width:500px) {
+    .cards-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media(max-width:500px) {
+    .loved {
+        font-size: 20px;
     }
 }
