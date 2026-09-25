@@ -114,12 +114,21 @@ ol {
         background-color: white;
         border-radius: 10px;
     padding: 20px ;
+    gap: 20px;
+        overflow: hidden;
+}
+.hero-content {
+    flex: 1;
+    /* Image ke sath jagah proper divide karega */
+    min-width: 0;
+    /* Text ko overflow hone se rokega */
 }
 .img{
-    width: 50%;
+    width: 45%;
     height: 400px;
     border-radius: 40px;
     object-fit: cover;
+    flex-shrink: 0;
 }
 @media(max-width:768px){
     .img{
@@ -143,6 +152,7 @@ ol {
     text-align: justify;
     line-height: 25px;
   font-style: oblique;
+width: 100%;
 }
 
 @media(max-width:768px){
