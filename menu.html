@@ -12,7 +12,7 @@
 <div id="navbar-placeholder"></div>
 <section class="hero">
     <div class="hero-container">
-        <div class="menus">
+        <div class="menues">
 <p style="color:#4A121A ; font-size: 25px; font-weight: 600; font-style: italic;">Our Menu</p>
 <p class="explore">Explore Our Delicious Menu</p>
 <p class="variety">Discover a variety of handcrafted dishes made with fresh ingredients and bold flavors. From our signature juicy burgers
@@ -25,13 +25,13 @@ ultimate cravings. Explore our rich selection today and enjoy an unforgettable d
 
 <!-- new section -->
  <section class="buttons">
-    <div class="btns">
-            <button class="btn2">All</button>
-            <button class="btn2">Burgers</button>
-            <button class="btn2">Pizza</button>
-            <button class="btn2">Pasta</button>
-            <button class="btn2">Chicken</button>
-            <button class="btn2">Drink</button>
+<div class="btns">
+    <button class="btn2" data-category="all">All</button>
+    <button class="btn2" data-category="burgers">Burgers</button>
+    <button class="btn2" data-category="pizza">Pizza</button>
+    <button class="btn2" data-category="pasta">Pasta</button>
+    <button class="btn2" data-category="chicken">Chicken</button>
+    <button class="btn2" data-category="drink">Drink</button>
 </div>
  </section>
  <!-- new -->
@@ -39,7 +39,7 @@ ultimate cravings. Explore our rich selection today and enjoy an unforgettable d
     <!--  -->
     <div class="cards-container">
 
-        <div class="card">
+        <div class="card" data-category="pasta">
             <img src="images/alferdo.jpg" alt="Creamy Alfredo Pasta" style="border-radius: 30px;">
             <div class="card-body">
                 <p class="card-title">Creamy Alfredo Pasta</p>
@@ -49,16 +49,16 @@ ultimate cravings. Explore our rich selection today and enjoy an unforgettable d
         </div>
         
 
-        <div class="card">
+        <div class="card" data-category="pizza">
             <img src="images/pizza.jpg" alt="Margherita Pizza">
             <div class="card-body">
                 <p class="card-title">Margherita Pizza</p>
-                <p class="card-price">$8.99</p>
+                <p class="card-price">$15.99</p>
                 <button class="btn3">Add</button>
             </div>
         </div>
 
-        <div class="card">
+        <div class="card" data-category="burgers">
             <img src="images/burger.jpg" alt="Classic Beef Burger">
             <div class="card-body">
                 <p class="card-title">Classic Beef Burger</p>
@@ -66,33 +66,43 @@ ultimate cravings. Explore our rich selection today and enjoy an unforgettable d
                 <button class="btn3">Add</button>
             </div>
         </div>
-        <div class="card">
-            <img src="images/pasta.jpg" alt="Creamy Alfredo Pasta">
+        <div class="card" data-category="burgers">
+            <img src="images/chicken-burger.jpg" alt="Chicken Burger">
             <div class="card-body">
-                <p class="card-title">Creamy Alfredo Pasta</p>
+                <p class="card-title">Chicken Burger</p>
                 <p class="card-price">$8.99</p>
                 <button class="btn3">Add</button>
             </div>
         </div>
-        <div class="card">
-            <img src="images\pizza.jpg" alt="Margherita Pizza">
+        <div class="card" data-category="chicken">
+            <img src="images/grilled-chicken.jpg" alt="Grilled Chicken">
             <div class="card-body">
-                <p class="card-title">Margherita Pizza</p>
-                <p class="card-price">$8.99</p>
+                <p class="card-title">Grilled Chicken</p>
+                <p class="card-price">$12.99</p>
                 <button class="btn3">Add</button>
             </div>
         </div>
-        <div class="card">
-            <img src="images/burger.jpg" alt="Classic Beef Burger">
+        <div class="card" data-category="drink">
+            <img src="images/lemonade.jpg" alt="Fresh Lemonade">
             <div class="card-body">
-                <p class="card-title">Classic Beef Burger</p>
-                <p class="card-price">$8.99</p>
+                <p class="card-title">Fresh Lemonade</p>
+                <p class="card-price">$7.99</p>
                 <button class="btn3">Add</button>
             </div>
         </div>
  </div>
 </section>
 
+<!--  -->
+<section>
+    <div class="deal">
+        <div class="line">
+<p class="special">Today's Special</p>
+<p class="rich">Get our special combination at a great price</p>
+    <button class="btn3">Order Now</button>
+</div>
+    </div>
+</section>
 <div id="footer-placeholder"></div>
 <script src="script.js"></script>
 </body>
