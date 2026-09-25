@@ -9,6 +9,54 @@ body {
 }
 
 body {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.hero{
+    margin-top: 50px;
     padding-left: 10px;
-    padding-right: 10px;
+        padding-right: 10px;
+        
+}
+.hero-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    overflow: hidden;
+}
+.menus{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.explore{
+    font-size: 40px;
+    font-weight: 600;
+    font-style: oblique;
+    color: #4A121A;
+}
+.variety{
+    font-size: 16px;
+    font-style: italic;
+    line-height: 28px;
+    letter-spacing: 3px;
+}
+.imgs{
+width: 40%;
+    height: 350px;
+    border-radius: 40px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+@media(max-width:768px){
+    .hero-container{
+        flex-direction: column;
+    }
+}
+@media(max-width:768px){
+    .imgs{
+        width: 100%;
+        height: auto;
+    }
 }
