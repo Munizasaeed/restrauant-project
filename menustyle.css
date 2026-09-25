@@ -1,0 +1,14 @@
+body {
+    background-color: #FDFBF7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-left: 10px;
+    padding-right: 10px;
+}
