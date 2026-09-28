@@ -50,3 +50,19 @@ filterbutton.forEach((item) => {
         });
     });
 });
+
+const faqItems = document.querySelectorAll('.faq');
+
+faqItems.forEach(item => {
+    item.addEventListener('click', () => {
+        // Toggle active class (Answer open/close karne ke liye)
+        item.classList.toggle('active');
+        // '+' ko '-' aur '-' ko '+' banane ki logic
+        const icon = item.querySelector('.faq-icon');
+        if (item.classList.contains('active')) {
+            icon.textContent = '−';
+        } else {
+            icon.textContent = '+';
+        }
+    });
+});

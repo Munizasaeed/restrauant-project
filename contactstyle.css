@@ -94,20 +94,41 @@ body {
         grid-template-columns:  1fr
     }
 }
-.right{
+.right {
     border: 2px solid rgb(214, 209, 209);
     border-radius: 10px;
     box-sizing: border-box;
     width: 50%;
     padding: 15px;
 }
-.faq{
-    display: flex;
-    justify-content: space-between;
+
+.faq {
     border: 2px solid rgb(214, 209, 209);
     padding: 12px;
-    margin-top: 23px;
+    margin-top: 15px;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.faq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Answer initially hidden rahega */
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    color: #555;
+    font-size: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+/* Jab active class lagegi tab answer show hoga */
+.faq.active .faq-answer {
+    display: block;
 }
 @media(max-width:900px){
 .main-container{
