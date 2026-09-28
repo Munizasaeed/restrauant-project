@@ -1,0 +1,86 @@
+body {
+    background-color: #FDFBF7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+@media (max-width: 600px) {
+    body {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+.about{
+    margin-top: 30px;
+}
+.about-container{
+    display: flex;
+    gap: 50px;
+}
+.imgaes {
+    width: 48%;
+    height: 350px;
+    border-radius: 30px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.bite{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.journey{
+    margin-bottom: 30px;
+}
+@media(max-width:768px){
+    .about-container{
+        flex-direction: column;
+    }
+}
+@media(max-width:768px) {
+    .imgaes {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* new */
+.story{
+    margin-top: 50px;
+}
+.story-container{
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+}
+.bites {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+@media(max-width:768px) {
+    .story-container {
+        flex-direction: column;
+        overflow: hidden;
+    }
+}
+@media(max-width:1100px) {
+    .journey {
+      margin-bottom: 10px;
+    }
+        .bites {
+            line-height: 21px;
+        }
+}

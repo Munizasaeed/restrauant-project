@@ -39,7 +39,7 @@ filterbutton.forEach((item) => {
         let selectedCategory = e.target.dataset.category;
         console.log(selectedCategory);
 
-        foodCards.forEach((card) => { // Here parameter is 'card'
+        foodCards.forEach((card) => { 
             let cardCategory = card.dataset.category;
 
             if (selectedCategory === 'all' || selectedCategory === cardCategory) {
