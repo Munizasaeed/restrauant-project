@@ -134,8 +134,8 @@ margin-top: 40px;
 .client{
     background-color: #4A121A;
     margin-top: 40px;
-        margin-left: -50px;
-            margin-right: -50px;
+        /* margin-left: -20px;
+            margin-right: -10px; */
 }
 .number{
     display: grid;
@@ -144,6 +144,16 @@ margin-top: 40px;
     align-items: center;
     justify-content: center;
         
+}
+@media(max-width:500px){
+    .number {
+            /* display: grid; */
+            grid-template-columns:  1fr;
+            /* padding: 50px 200px; */
+            align-items: center;
+            justify-content: center;
+    
+        }
 }
 .year{
     display: flex;

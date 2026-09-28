@@ -1,14 +1,15 @@
 .footer {
     margin-top: 20px;
     background-color: #4A121A;
-    margin-left: -50px;
-        margin-right: -50px;
     padding: 30px 0;
 }
-
+.body{
+    background-color: #4A121A;
+}
 .footer-container {
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
+    /* padding: 30px 0; */
 }
 
 .menus {
