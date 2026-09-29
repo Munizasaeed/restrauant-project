@@ -66,3 +66,49 @@ faqItems.forEach(item => {
         }
     });
 });
+
+let forms = document.querySelector(".contact");
+let name = document.querySelector("#name");
+let email = document.querySelector("#email");
+let subject = document.querySelector("#subject");
+let message = document.querySelector("#message");
+
+const errorMsg = document.createElement("p");
+errorMsg.style.marginTop = "10px";
+errorMsg.style.fontWeight = "500";
+
+// Sabhi inputs ko array mein daal kar 'input' event attach karein
+const allInputs = [name, email, subject, message];
+
+allInputs.forEach(input => {
+    input.addEventListener('input', () => {
+        // Jaise hi user kuch bhi type karega, error message saaf ho jayega
+        errorMsg.textContent = "";
+    });
+});
+
+forms.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    if (!forms.contains(errorMsg)) {
+        forms.append(errorMsg);
+    }
+
+    if (name.value.trim() === "" || email.value.trim() === "" || subject.value.trim() === "" || message.value.trim() === "") {
+        errorMsg.textContent = "Please fill all fields!";
+        errorMsg.style.color = "red";
+    } 
+    else if (message.value.trim().length < 10) {
+        errorMsg.textContent = "Message must be at least 10 characters long!";
+        errorMsg.style.color = "red";
+    } 
+    else {
+        errorMsg.textContent = "Form submitted successfully!";
+        errorMsg.style.color = "green";
+
+        name.value = "";
+        email.value = "";
+        subject.value = "";
+        message.value = "";
+    }
+});

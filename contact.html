@@ -25,28 +25,40 @@
  <!-- new section -->
   <section class="forms">
     <div class="main-container">
-    <div class="contact">
-            <p style="color: #4A121A;  font-size: 25px; font-weight: 600; margin-bottom: 10px;">Send us a message</p>
-            <div class="form">
-            <div class="input">
-              <label for="name">Your Name</label>
-              <input type="text" placeholder="Enter your name" required style="padding: 10px;">
-            </div>
-            <div class="input">
-                <label for="email">Your Email</label>
-                <input type="email" placeholder="Enter your email" required style="padding: 10px;">
-            </div>
-            </div>
-            <!--  -->
-            <div class="input">
-                <label for="subject">Subject</label>
-                <input type="text" placeholder="Enter Subject" required style="padding: 20px;">
-            </div>
-            <div class="input">
-                <label for="message">Message</label>
-            <textarea placeholder="Type your message here ..." required style="padding: 20px;"></textarea>
-            </div>
+<!-- 1. <div> ki jagah <form> tag lagayein -->
+<form class="contact">
+    <p style="color: #4A121A; font-size: 25px; font-weight: 600; margin-bottom: 10px;">Send us a message</p>
+
+    <div class="form">
+        <div class="input">
+            <label for="name">Your Name</label>
+            <!-- Input par id="name" lagayein -->
+            <input type="text" id="name" placeholder="Enter your name" style="padding: 10px;">
+        </div>
+
+        <div class="input">
+            <label for="email">Your Email</label>
+            <!-- Input par id="email" lagayein -->
+            <input type="email" id="email" placeholder="Enter your email" style="padding: 10px;">
+        </div>
     </div>
+
+    <div class="input">
+        <label for="subject">Subject</label>
+        <!-- Input par id="subject" lagayein -->
+        <input type="text" id="subject" placeholder="Enter Subject" style="padding: 20px;">
+    </div>
+
+    <div class="input">
+        <label for="message">Message</label>
+        <!-- Textarea par id="message" lagayein -->
+        <textarea id="message" placeholder="Type your message here ..." style="padding: 20px;"></textarea>
+    </div>
+
+    <!-- Submit Button (type="submit" lagana zaroori hai) -->
+    <button type="submit"
+        style="background-color: #4A121A; color: white; font-size: 18px; padding: 10px 20px; font-weight: 600; margin-top: 10px; border-radius: 10px; cursor: pointer;">Submit</button>
+</form>
 <!-- right side -->
 <div class="right">
     <p style="color: #4A121A; font-size: 20px; font-weight: 600;">Frequently Asked Questions</p>
